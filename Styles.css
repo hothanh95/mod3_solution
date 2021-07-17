@@ -1,0 +1,85 @@
+/* Styles.css */
+
+* {
+  box-sizing: border-box;
+}
+h1 {
+  margin-bottom: 5%;
+  text-align: center;
+}
+
+section {
+  background-color: darkgrey;
+  width: 100%;
+  height: auto;
+  padding: 12% 3% 3%;
+  font-family: Copperplate;
+  color: black;
+}
+
+div.relative {
+  position: relative;
+  height: auto;
+  border: 1px solid black;
+  margin-left: 2%;
+} 
+
+h4.absolute {
+  position: absolute;
+  top: 0px;
+  right: 0;
+  width: 100px;
+  height: 30px;
+  border-width: 0px 0px 1px 1px;
+  border-style: solid;
+  border-color: black;
+  text-align: center;
+  margin: auto;
+  padding-top: 1%;
+}
+
+.pink{
+  background-color: pink;
+}
+
+.darkred {
+  background-color: darkred;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+/* Responsive Framework. */
+.row {
+	width: 100%;
+}
+/********** Desktop devices only **********/
+@media (min-width: 992px) {
+  .Dboxsize {
+    width: 30%;
+    float: left;
+  }
+}
+
+/********** Tablet devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  .Tboxsize {
+    width: 48%;
+    float: left;
+  }
+  .Tboxsize:last-child {
+    width: 98%;
+    margin: 2% 2%;
+  }
+  #box {
+    padding-top: 5%;
+  }
+}
+
+/********** Mobile devices only **********/
+@media (max-width: 676px) {
+  .Tboxsize {
+    margin: 2% 2%;
+  }
+}
